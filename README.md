@@ -3,104 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Movie Title</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
         }
         header {
-            background: #333;
-            color: white;
-            padding: 20px 0;
             text-align: center;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
         }
         .container {
             max-width: 800px;
-            margin: 20px auto;
+            margin: 0 auto;
             background: white;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            color: #333;
+        .cast {
+            list-style-type: none;
+            padding: 0;
         }
-        .project {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background: #333;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        a {
-            color: #333;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        .cast li {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>My Portfolio</h1>
-    <p>Welcome to my personal portfolio website!</p>
+    <h1>Movie Title</h1>
+    <p>Release Date: January 1, 2023</p>
 </header>
 
 <div class="container">
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites. I love coding and learning new technologies.</p>
-    </section>
+    <img src="movie-poster.jpg" alt="Movie Poster">
+    <h2>Synopsis</h2>
+    <p>This is a brief description of the movie. It provides an overview of the plot, main characters, and themes.</p>
 
-    <section>
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1. <a href="#">View Project</a></p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2. <a href="#">View Project</a></p>
-        </div>
-        <div class="project">
-            <h3>Project 3</h3>
-            <p>Description of project 3. <a href="#">View Project</a></p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out via email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-    </section>
+    <h2>Cast</h2>
+    <ul class="cast">
+        <li>Actor 1 as Character 1</li>
+        <li>Actor 2 as Character 2</li>
+        <li>Actor 3 as Character 3</li>
+        <li>Actor 4 as Character 4</li>
+    </ul>
 </div>
-
-<footer>
-    <p>&copy; 2023 My Portfolio</p>
-</footer>
 
 </body>
 </html>
